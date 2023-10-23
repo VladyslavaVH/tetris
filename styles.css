@@ -1,0 +1,58 @@
+body {
+    height: 100vh;
+    min-height: 100vh;
+    padding-top: 15vh;
+}
+
+h1 {
+    margin-bottom: 0;
+    text-shadow: grey 2px 2px 0px;
+}
+
+div, input {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: monospace;
+    text-align: center;
+}
+
+input {
+    font-weight: normal;
+    font-size: 20px;
+    width: 100px;
+}
+
+canvas{
+    display: block;
+    background: black;
+}
+
+#myTetris {
+    width: 335px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+p {
+    margin: 10px;
+}
+
+#information {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+img {
+    display: block;
+    width: 250px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+#gameOver {
+    margin-top: 20vh;
+}

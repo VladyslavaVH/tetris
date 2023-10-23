@@ -1,0 +1,37 @@
+<html>
+<head>
+    <link rel="shortcut icon" href="tetris.ico" type="ico">
+    <link rel="stylesheet" href="styles.css">
+    <script src="jquery-3.6.0.min.js"></script>   
+    <title>My Tetris</title>
+</head>
+<body>
+    <img id="logo" src="./logo.png">
+    <div id="myTetris">
+        <canvas id="tetris" width="200" height="400"></canvas>
+        <div id="information">
+            <canvas id="nextPiece" width="100" height="80"></canvas>
+            <div>
+                <p>Level</p>
+                <input type="text" id="level" value="1" readonly>
+                <p>Score</p>
+                <input type="text" id="score" value="0" readonly>
+                <p>Lines</p>
+                <input type="text" id="lines" value="0" readonly>
+                <p>Record</p>
+                <input type="text" id="record" value="0" readonly>
+            </div>
+        </div>
+    </div>
+    <div id="gameOver" style="display: none;">
+        <h1><span style="color: red;">G</span><span style="color: orange;">A</span><span style="color: yellow;">M</span><span style="color: yellowgreen;">E</span> <span style="color: green;">O</span><span style="color: blue;">V</span><span style="color: magenta;">E</span><span style="color: purple;">R</span></h1>
+        <p id="result">Your result:</p>
+        <p id="maxResult">Record:</p>
+    </div>
+
+    <script src="tetrominoes.js"></script>
+    <script src="functions.js"></script>
+    <script src="classPiece.js"></script>
+    <script src="tetris.js"></script>
+</body>
+</html>
